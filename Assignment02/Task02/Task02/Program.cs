@@ -7,6 +7,12 @@ int App = rnd.Next(1, 4);
 
 // 1 == qva, 2 == qagaldi, 3 == makrateli
 
+if(player != "qva" || player != "qagaldi" || player != "makrateli")
+{
+    Console.WriteLine("gtxovt chaweret swori modzraoba");
+    return;
+}
+
 if (App == 1)
 {
     Console.WriteLine("aplikaciam airchia qva");
