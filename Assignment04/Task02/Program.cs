@@ -11,25 +11,37 @@ for (int i = 0; i < n; i++)
 Console.WriteLine("Enter length of second array");
 int m = int.Parse(Console.ReadLine());
 
-string[] arr2 = new string[m];
+int[] arr2 = new int[m];
 Console.WriteLine("Enter elements of second array");
 for (int i = 0; i < m; i++)
 {
-    arr[i] = Console.ReadLine();
+    arr2[i] = int.Parse(Console.ReadLine());
 }
 
 int sum = n + m;
 string[] arr3 = new string[sum];
 int count = 0;
 
-for (int i = 0; i < sum - 1; i += 2)
+for (int i = 0; i < sum; i++)
 {
-    arr3[i] = arr[count];
-    arr3[i + 1] = arr2[count];
+    if(count < n && count < m)
+    {
+        arr3[i] = arr[count];
+        arr3[i + 1] = arr2[count].ToString();
+        i++;
+    }else if(count < n)
+    {
+        arr3[i] = arr[count];
+    }
+    else
+    {
+        arr3[i] = arr2[count].ToString();
+    }
+    
     count++;
 }
 
 for (int i = 0; i < sum; i++)
 {
-    Console.Write(arr[i] + " ");
+    Console.Write(arr3[i] + " ");
 }
