@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leto\\Desktop\\C#\\TBCAcademyCsharp\\Assognment01\\Task1\\Task01\\Task01\\Task01.csproj",
+      "projectUniqueName": "C:\\Users\\Leto\\Desktop\\C#\\TBCAcademyCsharp\\Assignment02\\Task01\\Task01\\Task01.csproj",
       "projectName": "Task01",
-      "projectPath": "C:\\Users\\Leto\\Desktop\\C#\\TBCAcademyCsharp\\Assognment01\\Task1\\Task01\\Task01\\Task01.csproj",
+      "projectPath": "C:\\Users\\Leto\\Desktop\\C#\\TBCAcademyCsharp\\Assignment02\\Task01\\Task01\\Task01.csproj",
       "packagesPath": "C:\\Users\\Leto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leto\\Desktop\\C#\\TBCAcademyCsharp\\Assognment01\\Task1\\Task01\\Task01\\obj\\",
+      "outputPath": "C:\\Users\\Leto\\Desktop\\C#\\TBCAcademyCsharp\\Assignment02\\Task01\\Task01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Leto\\AppData\\Roaming\\NuGet\\NuGet.Config",

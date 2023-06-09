@@ -6,9 +6,9 @@ int mx = int.Parse(Console.ReadLine());
 
 Random rnd = new Random();
 int Guess;
-Guess = rnd.Next(mn, mx);
+Guess = rnd.Next(mn, mx + 1);
 
-int player = -1;
+int player;
 int count = 0;
 string Decision;
 
@@ -33,13 +33,12 @@ while(true)
             Console.WriteLine("Please enter new max number");
             mx = int.Parse(Console.ReadLine());
 
-            Guess = rnd.Next(mn, mx);
+            Guess = rnd.Next(mn, mx + 1);
             count = 0;
         }
         else
         {
             break;
-            Environment.Exit(1);
         }
     }
 
