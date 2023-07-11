@@ -129,15 +129,15 @@ namespace Task02
 
         public void Clear() 
         {
-            Array.Clear(_peopleList);
+            _peopleList = _peopleList.Where(var => var == null).ToArray();
         }
 
         public Person findPerson(string name)
         {
-            Person search = _peopleList.FirstOrDefault(var => var.Name == name);
+            Person search = _peopleList.FirstOrDefault(var => var.Name.ToLower() == name.ToLower());
             if (search == null)
             {
-                Console.WriteLine("Given book isn't in this library");
+                Console.WriteLine("Given person is not in the list");
                 return search;
             }
             else
